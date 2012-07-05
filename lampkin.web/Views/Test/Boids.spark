@@ -1,4 +1,4 @@
-﻿<script type="text/javascript" src="${Url.Content("~/Scripts/glMatrix.js")}"></script>
+﻿<script type="text/javascript" src="${Url.Content("~/Scripts/glMatrix-0.9.5.min.js")}"></script>
 <script type="text/javascript" src="${Url.Content("~/Scripts/webgl-utils.js")}"></script>  
 
 <script type="text/javascript" src="${Url.Content("~/Scripts/WebGl/ShaderService.js")}"></script>

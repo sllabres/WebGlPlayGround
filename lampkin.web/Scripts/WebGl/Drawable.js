@@ -23,7 +23,7 @@ function Drawable(gl, drawHandler, drawData) {
     this.gl.bindBuffer(this.gl.ARRAY_BUFFER, this.drawData.vertexPositionBuffer);
     this.gl.bufferData(this.gl.ARRAY_BUFFER, new Float32Array(this.drawData.vertices), this.gl.STATIC_DRAW);
     
-    this.draw = function() {
+    this.draw = function() {        
         this.drawHandler.draw(this.drawData);
     }
 }

@@ -17,7 +17,7 @@
         this.gl.linkProgram(this.program);
         this.gl.useProgram(this.program);
 
-        //this.vertexColorAttribute = this.gl.getAttribLocation(this.program, "aVertexColor");
+        this.vertexColorAttribute = this.gl.getAttribLocation(this.program, "aVertexColor");
         this.vertexPositionAttribute = this.gl.getAttribLocation(this.program, "aVertexPosition");
         
         this.gl.enableVertexAttribArray(this.vertexPositionAttribute);        

@@ -1,3 +1,4 @@
+
 var boidA;
 var boidB;
 var follow;
@@ -20,14 +21,13 @@ function init() {
     drawData.yaw = 3*Math.PI/2;
     
     drawData.vertices = [
-             1.0,  1.0,  0.0,
-            -1.0,  1.0,  0.0,
-             1.0, -1.0,  0.0,
-            -1.0, -1.0,  0.0
+             0.0,  -1.0,  0.0,
+            2.0, 0.0,  0.0,
+             0.0, 1.0,  0.0
         ];
 
     drawData.mode = 4;
-    drawData.count = 4;
+    drawData.count = 3;
     drawData.itemSize = 3;
 
     var drawable = new Drawable(gl, drawService, drawData);
@@ -46,12 +46,11 @@ function init() {
     drawData.vertices = [
              0.0,  -1.0,  0.0,
             2.0, 0.0,  0.0,
-             0.0, 1.0,  0.0,
              0.0, 1.0,  0.0
         ];
 
     drawData.mode = 4;
-    drawData.count = 4;
+    drawData.count = 3;
     drawData.itemSize = 3;
     
     follow = new Drawable(gl, drawService, drawData);
@@ -65,13 +64,13 @@ function tick() {
         cohesionRule.yTarget = follow.drawData.y;      
         cohesionRule.xTarget = follow.drawData.x; 
         cohesionRule.zTarget = follow.drawData.z; 
-
+        drawService.setView();                    
         requestAnimFrame(tick);                    
         //boidB.update();      
         boidA.update();
         follow.draw();
         
-        drawService.setView();                    
+        
         handleKeys();    
 
         //document.getElementById("currentAngle").innerText = boidA.drawable.drawData.yaw;
