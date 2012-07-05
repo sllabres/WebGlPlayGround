@@ -1,4 +1,3 @@
-// Test commit
 var boidA;
 var boidB;
 var follow;
