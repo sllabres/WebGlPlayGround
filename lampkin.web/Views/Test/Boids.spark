@@ -32,3 +32,5 @@
 </script>
 
 <canvas id="canvas" style="border: 1px solid black;" width="500" height="500"></canvas>
+
+Testing
