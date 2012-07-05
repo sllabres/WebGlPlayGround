@@ -1,0 +1,9 @@
+Vehicle (Visible entity)
+
+World (tell it where it is)
+
+CohesionRule (ask it what to do)
+
+-----------------------
+
+VehicleFactory 
