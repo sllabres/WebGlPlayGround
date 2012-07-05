@@ -14,7 +14,6 @@ function init() {
     drawData.y = 0.0;
     drawData.z = -7.0;
 
-    
     drawData.vertices = [
             -1.0, -1.0,  1.0,
              1.0, -1.0,  1.0,
