@@ -125,9 +125,6 @@
     <Content Include="Views\Test\Boids.spark" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\WebGl\Index.spark" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Scripts\Boids\Boid.js" />
     <Content Include="Scripts\Boids\Init.js" />
     <Content Include="Scripts\Boids\Specs\Boid.js" />
